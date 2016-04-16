@@ -1,0 +1,1 @@
+{"version":3,"sources":["_structure.scss","_skin.scss","style.scss"],"names":[],"mappings":"AAAA,OAEE,OAAQ,KCAR,MAAO,ICET,OAEE,MAAO","file":"style.css","sourcesContent":["body {\n\tp {\n\t\theight: 100%;\n\t}\n}","body {\n\tp {\n\t\tcolor: red;\n\t}\n}","@import 'structure';\n\n@import 'skin';\n\np {\n\tspan {\n\t\tcolor: pink;\n\t}\n}"],"sourceRoot":"/source/"}
