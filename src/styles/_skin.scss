@@ -1,9 +1,12 @@
+$red: #f00;
+$black: #000;
+
 body {
 	p {
-		color: red;
+		color: $red;
 	}
 }
 
 ::placeholder {
-	color: black;
+	color: $black;
 }

@@ -1,17 +1,15 @@
 import React from 'react';
 
-export default class Button extends React.Component {
-	constructor() {
-		super();
-		
-		this.displayName = 'Button';
-	}
+var button = React.createClass({
+	displayName: 'Button',
 
-	render () {
+	render: function () {
 		return (
 			<div className="display-button">
 				<button className="button">Click me</button>
 			</div>
 		);
 	}
-}
+});
+
+export default button;
