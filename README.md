@@ -3,9 +3,9 @@
 To build:
 
 ```gulp build```
-
+or
 ```gulp build:src```
-
+or
 ```gulp build:scss```
 
 To test:
@@ -15,10 +15,10 @@ To test:
 To Lint:
 
 ```gulp lintify```
-
+or
 ```gulp lintify:src```
-
+or
 ```gulp lintify:scss```
-
+or
 ```gulp lintify:test```
 
