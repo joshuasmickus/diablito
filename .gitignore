@@ -1,4 +1,5 @@
 .meteor
 npm-debug.log
 node_modules
-build
+lib
+public
