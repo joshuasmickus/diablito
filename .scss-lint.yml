@@ -1,89 +1,172 @@
+# Default application configuration that all configurations inherit from.
 linters:
+  BangFormat:
+    enabled: true
+    space_before_bang: true
+    space_after_bang: false
+
   BorderZero:
     enabled: true
+
   ColorKeyword:
-    enabled: false
+    enabled: true
+
   ColorVariable:
     enabled: false
+
   Comment:
-    enabled: false
+    enabled: true
+
+  DebugStatement:
+    enabled: true
+
   DeclarationOrder:
     enabled: true
+    severity: error
+
   DuplicateProperty:
-    enabled: ture
+    enabled: true
+
+  ElsePlacement:
+    enabled: true
+    style: same_line # or 'new_line'
+
   EmptyLineBetweenBlocks:
     enabled: true
+    ignore_single_line_blocks: true
+
   EmptyRule:
-    enabled: false
+    enabled: true
+
   FinalNewline:
     enabled: true
+    present: true
+
   HexLength:
     enabled: true
+    style: short # or 'long'
+
   HexNotation:
     enabled: true
+    style: lowercase # or 'uppercase'
+
+  HexValidation:
+    enabled: true
+
   IdSelector:
     enabled: true
+    severity: error
+
   ImportPath:
-    enabled: false
-  ImportantRule:
-    enabled: true
+    leading_underscore: false
+    filename_extension: false
+
   Indentation:
-    enabled: false
+    enabled: true
+    character: tab # or 'space'
+    width: 1
+
   LeadingZero:
     enabled: true
+    style: include_zero # or 'exclude_zero'
+
   MergeableSelector:
     enabled: true
+    force_nesting: true
+
   NameFormat:
-    enabled: false
+    enabled: true
+    convention: hyphenated_lowercase # or 'BEM', or a regex pattern
+
   NestingDepth:
-    enabled: false
+    enabled: true
+    max_depth: 4
+
   PlaceholderInExtend:
-    enabled: false
+    enabled: true
+    severity: error
+
   PropertySortOrder:
-    enabled: false
+    enabled: true
+    ignore_unspecified: false
+
   PropertySpelling:
-    enabled: false
-  PseudoElement:
-    enabled: false
+    enabled: true
+    extra_properties:
+      - text-size-adjust
+
   QualifyingElement:
-    enabled: false
+    allow_element_with_attribute: true
+    allow_element_with_class: true
+    allow_element_with_id: false
+
   SelectorDepth:
     enabled: true
+    max_depth: 4
+
   SelectorFormat:
-    enabled: false
+    enabled: true
+    convention: hyphenated_lowercase # or 'BEM', or 'snake_case', or 'camel_case', or a regex pattern
+
   Shorthand:
-    enabled: false
+    enabled: true
+
   SingleLinePerProperty:
-    enabled: false
+    enabled: true
+    allow_single_line_rule_sets: true
+
   SingleLinePerSelector:
-    enabled: false
+    enabled: true
+
   SpaceAfterComma:
-    enabled: false
+    enabled: true
+
   SpaceAfterPropertyColon:
-    enabled: false
+    enabled: true
+    style: one_space # or 'no_space', or 'at_least_one_space', or 'aligned'
+
   SpaceAfterPropertyName:
-    enabled: false
-  SpaceAfterVariableName:
-    enabled: false
-  SpaceAroundOperator:
-    enabled: false
+    enabled: true
+
   SpaceBeforeBrace:
-    enabled: false
+    enabled: true
+    style: space
+    allow_single_line_padding: true
+
   SpaceBetweenParens:
-    enabled: false
+    enabled: true
+    spaces: 0
+
   StringQuotes:
-    enabled: false
+    enabled: true
+    style: double_quotes # or single_quotes
+
   TrailingSemicolon:
-    enabled: false
-  TrailingWhitespace:
-    enabled: false
+    enabled: true
+
+  TrailingZero:
+    enabled: true
+
   UnnecessaryMantissa:
-    enabled: false
+    enabled: true
+
+  UnnecessaryParentReference:
+    enabled: true
+
   UrlFormat:
-    enabled: false
+    enabled: true
+
   UrlQuotes:
-    enabled: false
-  VendorPrefix:
-    enabled: false
+    enabled: true
+
+  VendorPrefixes:
+    enabled: true
+    identifier_list: base
+    include: []
+    exclude: []
+
   ZeroUnit:
+    enabled: true
+
+  Compass::*:
     enabled: false
