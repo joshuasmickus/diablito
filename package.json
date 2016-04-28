@@ -2,7 +2,7 @@
   "name": "diablito",
   "version": "0.0.1",
   "private": true,
-  "description": "A Kinto+React project boilerplate.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "meteor run",
